@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee Management System</h1>
+    <div class="form-section">
+      <h2>Add Employee</h2>
+      <label for="empName">Name:</label>
+      <input type="text" id="empName" required>
+      <label for="empId">ID:</label>
+      <input type="text" id="empId" required>
+      <label for="empSalary">Salary:</label>
+      <input type="number" id="empSalary" min="0" required>
+      <label for="empDept">Department:</label>
+      <input type="text" id="empDept" required>
+      <button id="addEmployee">Add Employee</button>
+    </div>
+    <div class="actions">
+      <button id="displayAll">Display All Employees</button>
+      <button id="filterSalary">Filter Salary > ₹50,000</button>
+      <button id="totalSalary">Total Salary</button>
+      <button id="avgSalary">Average Salary</button>
+      <div class="count-section">
+        <label for="deptInput">Department:</label>
+        <input type="text" id="deptInput">
+        <button id="countDept">Count in Department</button>
+      </div>
+    </div>
+    <div id="output"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
