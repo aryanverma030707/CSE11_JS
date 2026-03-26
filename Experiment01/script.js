@@ -19,6 +19,7 @@ document.getElementById('generateInputs').addEventListener('click', function() {
   }
 });
 
+
 document.getElementById('calculate').addEventListener('click', function() {
   const numSubjects = parseInt(document.getElementById('numSubjects').value);
   if (isNaN(numSubjects) || numSubjects < 1 || numSubjects > 10) {
