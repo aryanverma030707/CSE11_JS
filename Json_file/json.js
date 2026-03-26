@@ -45,18 +45,18 @@ async function getData() {
     }
 }
 
-// Call the function
+getData();
 
 // Alternative: Using .then() and .catch()
-// fetch("https://jsonplaceholder.typicode.com/users")
-// .then(response => {
-//     if (!response.ok) {
-//         throw new Error(`HTTP error! status: ${response.status}`);
-//     }
-//     return response.json();
-// })
-// .then(data => console.log("Data fetched:", data))
-// .catch(error => console.error("Fetch error:", error));
+fetch("https://jsonplaceholder.typicode.com/users")
+.then(response => {
+    if (!response.ok) {
+         throw new Error(`HTTP error! status: ${response.status}`);
+}
+return response.json();
+})
+.then(data => console.log("Data fetched:", data))
+.catch(error => console.error("Fetch error:", error));
 
 try {
     let data = getData();
