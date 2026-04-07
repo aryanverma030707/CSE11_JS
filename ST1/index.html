@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Grade Calculator</h2>
+
+    <label for="numSubjects">Enter Number of Subjects:</label>
+    <input type="number" id="numSubjects" min="1" max="10" placeholder="e.g., 5">
+
+    <button id="generateInputs">Generate Inputs</button>
+
+    <div id="marksInputs"></div>
+
+    <button id="calculate">Calculate Grade</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
