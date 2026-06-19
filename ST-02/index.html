@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks & Grade Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Marks & Grade Calculator</h1>
+        <input type="number" id="numSubjects" placeholder="Enter Number of Subjects">
+        <button onclick="generateInputs()">Generate Subjects</button>
+        <div id="marksContainer"></div>
+        <button id="calculateBtn" type="button" onclick="calculateResult()" hidden>
+            Calculate Result
+        </button>
+        
+        <div id="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
